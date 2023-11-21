@@ -403,6 +403,10 @@ svg text {
     color: #6c757d; /* Gray text color */
 }
 
+.card-header {
+    color: #007bff;
+}
+
 /* Add styles for the main container wrapping the left and projects sections */
 .main-container {
     display: flex;
