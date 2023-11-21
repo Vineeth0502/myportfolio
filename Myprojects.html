@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+    <title>Vineeth Ketham - Projects</title>
+    <style>
+        body{
+            display: block;
+        }
+        /* Additional styling for dotted-box in left-section */
+        .left-section {
+            display: flex;
+            align-items: center;
+        }
+
+        .dotted-box img {
+            width: 50%;
+            height: auto;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <div class="navbar-container" id="navbarContainer">
+        <div class="navbar-links">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="work.html">Work Experience</a></li>
+                <li><a href="Myprojects.html">Projects</a></li>
+                <li><a href="contact.html">Contact Me</a></li>
+            </ul>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/your-linkedin-profile" target="_blank">
+                    <img src="pics/linkedin.png" alt="LinkedIn">
+                </a>
+                <a href="https://www.instagram.com/your-instagram-profile" target="_blank">
+                    <img src="pics/instagram.png" alt="Instagram">
+                </a>
+                <a href="https://www.instagram.com/your-instagram-profile" target="_blank">
+                    <img src="pics/whatsapp.png" alt="Instagram">
+                </a>
+                <a href="https://www.snapchat.com/add/your-snapchat-username" target="_blank">
+                    <img src="pics/snapchat.png" alt="Snapchat">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="navbar">
+        <div class="menu-icon" onclick="toggleNavbar()">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </div>
+
+    <div class="glitch-wrapper">
+        <div class="glitch" data-text="Projects">Projects</div>
+    </div>
+
+    <!-- Projects Content -->
+    <section id="projects" class="content container mt-5">
+        <!-- Left Section Content -->
+        <div class="left-section">
+            <div class="slideshow-container">
+                <img src="pics/digitalzap.avif" alt="Project 1">
+                <img src="pics/nmrec.png" alt="Project 2">
+                <img src="pics/linkedin.png" alt="Project 3">
+                <!-- Add more images as needed -->
+            </div>
+        </div>
+
+        <!-- Bootstrap Carousel -->
+        <div id="projectCarousel" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+
+                <!-- LEO - Virtual Assistant -->
+                <div class="carousel-item active">
+                    <div class="card">
+                        <div class="card-body">
+                            <h2 class="card-title">LEO - Virtual Assistant (2023)</h2>
+                            <p class="card-text"><strong>AI Model</strong></p>
+                            <ul>
+                                <li>Created an AI model using Python programming.</li>
+                                <li>Implemented speech recognition for tasks assigned to Jarvis.</li>
+                                <li>Used Python GUI programming (PyQt5 framework) to build an interface.</li>
+                                <li>Personal assistant capable of performing tasks with voice commands.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- BaatCheeth -->
+                <div class="carousel-item">
+                    <div class="card">
+                        <div class="card-body">
+                            <h2 class="card-title">BaatCheeth (2022)</h2>
+                            <p class="card-text"><strong>Android App – Using Firebase Console</strong></p>
+                            <ul>
+                                <li>Created an Android-based chat application using Firebase.</li>
+                                <li>Utilized Firebase for Realtime database, cloud services, and authentication.</li>
+                                <li>Implemented features such as glide view, shimmer effect, and status view.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Add more projects as needed -->
+
+            </div>
+            <a class="carousel-control-prev" href="#projectCarousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#projectCarousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+
+    </section>
+
+    <div class="glitch-wrapper">
+        <div class="glitch" data-text="Publications">Publications</div>
+    </div>
+
+    <!-- Publications Content -->
+    <section id="publications" class="contenttwo">
+        <!-- Research Publication -->
+        <div class="publication-item">
+            <!-- Left Section with Image -->
+            <div class="left">
+                <div class="dotted-box">
+                    <img src="pics/paper.png" alt="Your Image Alt Text">
+                </div>
+            </div>
+
+            <h2>LEO - Virtual Assistance</h2>
+            <p>Published in the International Journal of Scientific Research in Engineering and Management (IJSREM).</p>
+            <p>Authors: K. Rajesh, K. Vineeth, M. Manasa, M. Chandan, V. Sirisha</p>
+            <p>Link: <a href="https://ijsrem.com/download/leo-the-virtual-assistance/" target="_blank">LEO - Virtual Assistance</a></p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/your-linkedin-profile" target="_blank">
+                <img src="pics/linkedin.png" alt="LinkedIn">
+            </a>
+            <a href="https://www.instagram.com/your-instagram-profile" target="_blank">
+                <img src="pics/instagram.png" alt="Instagram">
+            </a>
+            <a href="https://www.instagram.com/your-instagram-profile" target="_blank">
+                <img src="pics/whatsapp.png" alt="Instagram">
+            </a>
+            <a href="https://www.snapchat.com/add/your-snapchat-username" target="_blank">
+                <img src="pics/snapchat.png" alt="Snapchat">
+            </a>
+        </div>
+    </footer>
+    <button id="themeToggle" class="mode" onclick="toggleTheme()">
+        <img src="pics/moon.png" alt="Dark Mode">
+    </button>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <script>
+        var leftSection = document.querySelector('.left-section');
+        var images = leftSection.querySelectorAll('.slideshow-container img');
+        var currentImage = 0;
+    
+        function showImage(index) {
+            // Hide all images
+            for (var i = 0; i < images.length; i++) {
+                images[i].style.display = 'none';
+            }
+            // Show the specified image
+            images[index].style.display = 'block';
+        }
+    
+        function nextImage() {
+            currentImage = (currentImage + 1) % images.length;
+            showImage(currentImage);
+        }
+    
+        function prevImage() {
+            currentImage = (currentImage - 1 + images.length) % images.length;
+            showImage(currentImage);
+        }
+    
+        // Show the first image initially
+        showImage(currentImage);
+    
+        // Automatically advance to the next image every 3 seconds
+        setInterval(nextImage, 5000);
+    </script>
+
+</body>
+
+</html>

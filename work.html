@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+    <title>Vineeth Ketham - Work Experience</title>
+    <style>
+        .mt-5, .my-5 {
+            margin-top: 0px !important;
+        }
+
+        .container {
+            text-align: center;
+            padding: 0px;
+        }
+        
+        .img-fluid {
+            width: 10%;
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <div class="navbar-container" id="navbarContainer">
+        <div class="navbar-links">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="work.html">Work Experience</a></li>
+                <li><a href="contact.html">Contact Me</a></li>
+            </ul>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/your-linkedin-profile" target="_blank">
+                    <img src="pics/linkedin.png" alt="LinkedIn">
+                </a>
+                <a href="https://www.instagram.com/your-instagram-profile" target="_blank">
+                    <img src="pics/instagram.png" alt="Instagram">
+                </a>
+                <a href="https://www.whatsapp.com/" target="_blank">
+                    <img src="pics/whatsapp.png" alt="Instagram">
+                </a>
+                <a href="https://www.snapchat.com/add/your-snapchat-username" target="_blank">
+                    <img src="pics/snapchat.png" alt="Snapchat">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="navbar">
+        <div class="menu-icon" onclick="toggleNavbar()">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </div>
+
+    <div class="glitch-wrapper text-center">
+        <div class="glitch" data-text="Work Experience">Work Experience</div>
+    </div>
+
+    <!-- Work Experience Content -->
+    <section id="workexperience" class="contentone container mt-5">
+        <h1 class="text-center mb-5"></h1>
+
+        <!-- DizitalZap Internship -->
+        <div class="card mb-3">
+            <div class="card-header">
+                DizitalZap - Hyderabad, IND
+            </div>
+            <div class="card-body">
+                <a href="https://digitalzap.in/" target="_blank">
+                    <img src="pics/digitalzap.avif" alt="DizitalZap Logo" class="img-fluid mb-3">
+                </a>
+                <h5 class="card-title">Intern - Junior Associate Software Engineer</h5>
+                <p class="card-text"><strong>Project: KAIRA</strong></p>
+                <button class="btn btn-primary mt-3" onclick="toggleDetails('dizitalzap-details')">Explore!</button>
+                <div id="dizitalzap-details" style="display: none; padding: 10px;">
+                    <p class="card-text">01st April 2021 - 10th July 2021</p>
+                    <ul class="list-group">
+                        <li class="list-group-item">Designed and established user-friendly WordPress websites.</li>
+                        <li class="list-group-item">Optimized check-out page, resulting in a 25% increase in user clicks and a subsequent 33% increase in customer purchases.</li>
+                        <li class="list-group-item">Proactively liaised with the design team and project manager to ensure efficient and timely project delivery.</li>
+                    </ul>                
+                </div>
+            </div>
+        </div>
+        <!-- Thepaperbrains Internship -->
+        <div class="card mb-3">
+            <div class="card-header">
+                ThePaperBrains - Hyderabad, IND
+            </div>
+            <div class="card-body">
+                <a href="https://thepaperbrains.com/" target="_blank">
+                    <img src="pics/thepaperbrains.png" alt="ThePaperBrains Logo" class="img-fluid mb-3">
+                </a>
+                <h5 class="card-title">Intern - Full Stack Developer</h5>
+                <p class="card-text"><strong>Projects: Viitjee, Vintage Retreat, thepaperbrains</strong></p>
+                <button class="btn btn-primary mt-3" onclick="toggleDetails('thepaperbrains-details')">Explore!</button>
+                <div id="thepaperbrains-details" style="display: none; padding: 10px;">
+                    <p class="card-text">08th Feb 2023 - 9th May 2023</p>
+                    <ul class="list-group">
+                        <li class="list-group-item">Worked as a Full Stack Developer, designing websites according to client specifications.</li>
+                        <li class="list-group-item">Developed websites for the company, ensuring functionality and user experience.</li>
+                    </ul>              
+                </div>
+            </div>
+        </div>
+        <!-- Execlerate Internship -->
+        <div class="card mb-3">
+            <div class="card-header">
+                Execlerate - Remote
+            </div>
+            <div class="card-body">
+                <a href="https://experience.4excelerate.org/" target="_blank">
+                    <img src="pics/excelerate.jpeg" alt="Execlerate Logo" class="img-fluid mb-3">
+                </a>
+                <h5 class="card-title">Intern - Data Analyst</h5>
+                <p class="card-text"><strong>Projects: Facebook Ad - Campaign</strong></p>
+                <button class="btn btn-primary mt-3" onclick="toggleDetails('excelerate-details')">Explore!</button>
+                <div id="excelerate-details" style="display: none; padding: 10px;">
+                    <p class="card-text">22nd Aug 2023 - 25th Sep 2023</p>
+                    <ul class="list-group">
+                        <li class="list-group-item">During my internship at Excelerate, I led Team 5A in optimizing GlobalShala's "Superhero U" Facebook ad campaigns. We analyzed 11 campaigns, focusing on metrics like engagement rate, impressions, reach, frequency, and cost per result. We recommended the discontinuation of less productive campaigns, enhancing campaign efficiency and conversion rates.</li>
+                    </ul>              
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/your-linkedin-profile" target="_blank">
+                <img src="pics/linkedin.png" alt="LinkedIn">
+            </a>
+            <a href="https://www.instagram.com/your-instagram-profile" target="_blank">
+                <img src="pics/instagram.png" alt="Instagram">
+            </a>
+            <a href="https://www.whatsapp.com/" target="_blank">
+                <img src="pics/whatsapp.png" alt="Instagram">
+            </a>
+            <a href="https://www.snapchat.com/add/your-snapchat-username" target="_blank">
+                <img src="pics/snapchat.png" alt="Snapchat">
+            </a>
+        </div>
+    </footer>
+    <button id="themeToggle" class="mode" onclick="toggleTheme()">
+        <img src="pics/moon.png" alt="Dark Mode">
+    </button>
+
+    <script>
+       function toggleDetails(detailsId) {
+            var detailsDiv = document.getElementById(detailsId);
+
+            if (detailsDiv !== null) {
+                // Check if the element exists before accessing its classList
+                if (detailsDiv.style.display === 'none' || !detailsDiv.style.display) {
+                    detailsDiv.style.display = 'block';
+                } else {
+                    detailsDiv.style.display = 'none';
+                }
+            } else {
+                console.error('Element with ID ' + detailsId + ' not found.');
+            }
+        }
+
+    </script>
+
+</body>
+
+</html>

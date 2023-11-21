@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>      
+    <style>
+        body{
+            display: block;
+        }
+
+        .dotted-box img {
+            width: 50%;
+            height: auto;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <div class="navbar-container" id="navbarContainer">
+        <div class="navbar-links">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#aboutme">About Me</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#worksection">Work Experience</a></li>
+                <li><a href="#contact">Contact Me</a></li>
+            </ul>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/your-linkedin-profile" target="_blank">
+                    <img src="pics/linkedin.png" alt="LinkedIn">
+                </a>
+                <a href="https://www.instagram.com/your-instagram-profile" target="_blank">
+                    <img src="pics/instagram.png" alt="Instagram">
+                </a>
+                <a href="https://www.whatsapp.com" target="_blank">
+                    <img src="pics/whatsapp.png" alt="Instagram">
+                </a>
+                <a href="https://www.snapchat.com/add/your-snapchat-username" target="_blank">
+                    <img src="pics/snapchat.png" alt="Snapchat">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="navbar">
+        <div class="menu-icon" onclick="toggleNavbar()">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="centered" id="content">
+            <img src="pics/vineeth1.jpg" alt="Profile Image" class="profile-image">
+            <svg>
+                <text x="50%" y="50%" dy=".25em" text-anchor="middle">
+                    Welcome To My Portfolio
+                </text>
+            </svg>
+            <a class="arrow-button" onclick="redirectToAboutMe()">&#9660;</a>
+        </div>
+    </div>
+
+    <section class="aboutme">
+        <div class="left-section">
+            <div class="profile-picture" onclick="openModal()">
+                <img src="pics/vineeth.jpg" alt="Vineeth Ketham">
+            </div>
+        </div>
+
+        <div id="aboutme" class="right-section">
+            <h2>About Me</h2>
+            <p>
+                Greetings! I am Vineeth Ketham, a dedicated software developer currently pursuing a Master's in Computer Science at Saint Louis University. With a proven track record in envisioning, coding, and managing cutting-edge software systems, I bring a wealth of experience to the table. During my internships at DizitalZap and ThePaperBrains in Hyderabad, India, I honed my skills in designing user-friendly WordPress websites and developing innovative solutions as a Full Stack Developer. My diverse project portfolio includes the creation of an AI model for a virtual assistant and an Android-based chat application using Firebase. Beyond the realm of technology, I find joy in playing cricket, a sport that not only fuels my competitive spirit but also emphasizes teamwork—a quality I seamlessly integrate into my professional pursuits. With a passion for staying at the forefront of technological advancements and a commitment to delivering exceptional results, I am excited about the endless possibilities in the dynamic field of software development.
+            </p>
+
+            <!-- Add the modal HTML here -->
+            <div id="myModal" class="modal">
+                <div class="modal-content cloud-background">
+                    <span class="close" onclick="closeModal()">&times;</span>
+                    <!-- The text content you want to display -->
+                    <h2>Passion</h2>
+                    <p>Full-stack Developer</p>
+                    <p>I am a dedicated Computer Science enthusiast pursuing a Master's degree at Saint Louis University after completing my Bachelor's degree at Nalla Malla Reddy Engineering College. As a Junior Associate Software Engineer at DizitalZap, I played a pivotal role in the success of the "KAIRA" project, leading to a 25% increase in user engagement and a 33% rise in customer purchases through optimized WordPress websites. As an Intern Full Stack Developer at ThePaperBrains, I creatively crafted various web solutions like "Viitjee," "Vintage Retreat," and "thepaperbrains," showcasing my versatility. I also developed the "LEO - Virtual Assistant," utilizing Python and advanced speech recognition to create a personalized AI model. Proficient in Java, Python, and JavaScript, with expertise in tools like Visual Studio and Android Studio, I am poised to drive innovation in Computer Science by combining academic knowledge with practical experience.</p>
+                    <h2>Hobbies</h2>
+                    <p>Playing Cricket</p>
+                    <!-- Additional content can be added as needed -->
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+    <div class="glitch-wrapper" id="education">
+        <div class="glitch" data-text="Education">Education</div>
+    </div>
+
+    <!-- Education Content -->
+    <section class="content">
+
+        <div class="empty-row"></div>
+
+        <!-- Master's Degree -->
+        <div class="education-item" onmouseover="bulgeItem(this)" onmouseout="unbulgeItem(this)">
+            <a href="https://www.slu.edu/" target="_blank">
+                <img src="pics/saint_louis.png" alt="Saint Louis University Logo" class="logo">
+            </a>
+            <h2>Saint Louis University</h2>
+            <p>Master's in Computer Science</p>
+            <p>Present - Aug 2023</p>
+        </div>
+
+        <!-- Bachelor's Degree -->
+        <div class="education-item" onmouseover="bulgeItem(this)" onmouseout="unbulgeItem(this)">
+            <a href="https://www.nmrec.edu.in/" target="_blank">
+                <img src="pics/nmrec.png" alt="Nalla Malla Reddy Engineering College Logo" class="logo">
+            </a>
+            <h2>Nalla Malla Reddy Engineering College - JNTUH</h2>
+            <p>Bachelor of Computer Science And Engineering</p>
+            <p>Aug 2019 - June 2023</p>
+        </div>
+
+        <!-- Intermediate -->
+        <div class="education-item" onmouseover="bulgeItem(this)" onmouseout="unbulgeItem(this)">
+            <a href="https://www.narayanajuniorcolleges.com/" target="_blank">
+                <img src="pics/narayana.png" alt="Narayana Jr College Logo" class="logo">
+            </a>
+            <h2>Narayana Jr College</h2>
+            <p>Hyderabad, India</p>
+            <p>Aug 2017 - May 2019</p>
+        </div>
+
+        <!-- School -->
+        <div class="education-item" onmouseover="bulgeItem(this)" onmouseout="unbulgeItem(this)">
+            <a href="https://www.trivenitalentschools.com/" target="_blank">
+                <img src="pics/triveni.png" alt="Triveni Talent School Logo" class="logo">
+            </a>
+            <h2>Triveni Talent School</h2>
+            <p>Khammam, India</p>
+            <p>March 2017</p>
+        </div>
+    </section>
+
+    
+    <div class="glitch-wrapper" id="projects">
+        <div class="glitch" data-text="Projects">Projects</div>
+    </div>
+
+    <!-- Projects Content -->
+    <section id="projects" class="contentthree container mt-5">
+
+        <!-- Bootstrap Carousel -->
+        <div id="projectCarousel" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+
+                <!-- LEO - Virtual Assistant -->
+                <div class="carousel-item active">
+                    <div class="card">
+                        <div class="card-body">
+                            <h2 class="card-title">LEO - Virtual Assistant (2023)</h2>
+                            <p class="card-text"><strong>AI Model</strong></p>
+                            <ul>
+                                <li>Created an AI model using Python programming.</li>
+                                <li>Implemented speech recognition for tasks assigned to Jarvis.</li>
+                                <li>Used Python GUI programming (PyQt5 framework) to build an interface.</li>
+                                <li>Personal assistant capable of performing tasks with voice commands.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- BaatCheeth -->
+                <div class="carousel-item">
+                    <div class="card">
+                        <div class="card-body">
+                            <h2 class="card-title">BaatCheeth (2022)</h2>
+                            <p class="card-text"><strong>Android App – Using Firebase Console</strong></p>
+                            <ul>
+                                <li>Created an Android-based chat application using Firebase.</li>
+                                <li>Utilized Firebase for Realtime database, cloud services, and authentication.</li>
+                                <li>Implemented features such as glide view, shimmer effect, and status view.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- BaatCheeth -->
+                <div class="carousel-item">
+                    <div class="card">
+                        <div class="card-body">
+                            <h2 class="card-title">PaatVihar (2023)</h2>
+                            <p class="card-text"><strong>Web Application : MERN Stack </strong></p>
+                            <ul>
+                                <li>: Created Web application utilizing MERN stack  </li>
+                                <li>Utilized Mongo DB for Realtime database, NODE JS For server and  React Js as FrontEnd </li>
+                                <li>Providing virtual tours for each school and making life easier for parents to fit their lads into the best school solution for finding your dream school..</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- BaatCheeth -->
+                <div class="carousel-item">
+                    <div class="card">
+                        <div class="card-body">
+                            <h2 class="card-title">MediFit (2022)</h2>
+                            <p class="card-text"><strong>Web Application : Using HTML/CSS &Django </strong></p>
+                            <ul>
+                                <li>Created : Web application using ML to predict and prevent diabetes and heart disease..</li>
+                                <li>Utilized SQLlite for Realtime database, Django For server, and ML Algorithms To predict diseases.</li>
+                                <li>Offers personalized diet tips and live yoga pose correction. Empowering users to take control of their health and adopt healthier habits.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <a class="carousel-control-prev" href="#projectCarousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#projectCarousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </section>
+
+    <div class="glitch-wrapper">
+        <div class="glitch" data-text="Publications">Publications</div>
+    </div>
+
+    <!-- Publications Content -->
+    <section id="publications" class="contenttwo">
+        <!-- Research Publication -->
+        <div class="publication-item">
+            <!-- Left Section with Image -->
+            <div class="left">
+                <div class="dotted-box">
+                    <img src="pics/paper.png" alt="Your Image Alt Text">
+                </div>
+            </div>
+
+            <h2>LEO - Virtual Assistance</h2>
+            <p>Published in the International Journal of Scientific Research in Engineering and Management (IJSREM).</p>
+            <p>Authors: K. Rajesh, K. Vineeth, M. Manasa, M. Chandan, V. Sirisha</p>
+            <p>Link: <a href="https://ijsrem.com/download/leo-the-virtual-assistance/" target="_blank">LEO - Virtual Assistance</a></p>
+        </div>
+    </section>
+
+    <div class="glitch-wrapper" id="worksection">
+        <div class="glitch" data-text="Clients I Have Worked With">Clients I Have Worked With</div>
+    </div>
+
+    <!-- Work Experience Content -->
+    <section id="work" class="contenttwo">
+
+        <!-- Client Section -->
+        <div class="work-item">
+        
+            <!-- Client Container for Horizontal Scrolling -->
+            <div class="client-container">
+
+                <!-- Row 2: Images -->
+                <div class="client">
+                    <img src="pics/digitalzap.avif" alt="Client 1 Logo">
+                </div>
+
+                <div class="client">
+                    <img src="pics/thepaperbrains.png" alt="Client 2 Logo">
+                </div>
+
+                <div class="client">
+                    <img src="pics/excelerate.jpeg" alt="Client 3 Logo">
+                </div>
+            </div>
+
+            <!-- Row 3: Button (Fixed) -->
+            <div class="client-button">
+                <button1 onclick="redirectToWorkDetails()">View More</button1>
+            </div>
+        </div>
+    </section>
+
+
+    <div class="glitch-wrapper" id="skills">
+        <div class="glitch" data-text="Skills">Skills</div>
+    </div>
+
+    <div class="skills-container">
+        <div class="skills-content">
+            <h1 class="skills-title"></h1>
+            <div class="skills-grid">
+                <div class="skill-item">
+                    <center><img src="pics/java.png" width="30%" alt=""></center>
+                    <h3 class="skill-name">Java</h3>
+                </div>
+                <div class="skill-item">
+                    <center><img src="pics/py.png" width="30%" alt=""></center>
+                    <h3 class="skill-name">Python</h3>
+                </div>
+                <div class="skill-item">
+                    <center><img src="pics/as.png" width="35%" alt=""></center>
+                    <h3 class="skill-name">Android Development</h3>
+                </div>
+                <div class="skill-item">
+                    <center><img src="pics/react.png" width="65%" alt=""></center>
+                    <h3 class="skill-name">React JS</h3>
+                </div>
+                <div class="skill-item">
+                    <center><img src="pics/njs.png" width="30%" alt=""></center>
+                    <h3 class="skill-name">Node JS</h3>
+                </div>
+                <div class="skill-item">
+                    <center><img src="pics/mdb.png" width="30%" alt=""></center>
+                    <h3 class="skill-name">Mongo DB</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="contact-container" id="contact">
+        <div class="contact-content">
+            <h1 class="contact-title">Interested to work with me?</h1>
+            <span class="contact-text">Drop a message to </span>
+            <a href="contact.html" class="contact-email">vineeth@gmail.com</a>
+        </div>
+    </div>    
+    
+       
+    <footer class="footer">
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/your-linkedin-profile" target="_blank">
+                <img src="pics/linkedin.png" alt="LinkedIn">
+            </a>
+            <a href="https://www.instagram.com/your-instagram-profile" target="_blank">
+                <img src="pics/instagram.png" alt="Instagram">
+            </a>
+            <a href="https://www.whatsapp.com/" target="_blank">
+                <img src="pics/whatsapp.png" alt="Instagram">
+            </a>
+            <a href="https://www.snapchat.com/add/your-snapchat-username" target="_blank">
+                <img src="pics/snapchat.png" alt="Snapchat">
+            </a>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+
+<button id="themeToggle" class="mode" onclick="toggleTheme()">
+    <img src="pics/moon.png" alt="Dark Mode">
+</button>
+
+</body>
+</html>
