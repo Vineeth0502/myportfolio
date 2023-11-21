@@ -26,6 +26,11 @@ function redirectToAboutMe() {
     });
 }
 
+function redirectToWorkDetails() {
+    // Add the logic to redirect to the work details page
+    window.location.href = 'work.html';
+}
+
 function toggleTheme() {
     const body = document.body;
     const isDarkMode = body.classList.toggle('dark-mode');
